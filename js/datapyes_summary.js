@@ -18,13 +18,21 @@
 //Reference(Non primitive)
 //Array,objects,functions
 
-const heros=["shaktiman","naagraj","doga"]
-let myObj={
-    name: "hitesh",
-    age: 22,
-}
+// const heros=["shaktiman","naagraj","doga"]
+// let myObj={
+//     name: "hitesh",
+//     age: 22,
+// }
 
-const myfunction=function(){
-    console.log("hello world");
-}
+// const myfunction=function(){
+//     console.log("hello world");
+// }
+
+
+//********************************************************************************************* */
+
+//Stack(primitive),Heap(Non-primitive)
+
+let myYoutubename="rohit";
+let anotherName=myYoutubename
 
