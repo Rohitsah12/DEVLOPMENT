@@ -129,3 +129,138 @@
 // console.log(reverseArray(sampleArray));
 
 
+// const dog={
+//     name:"Shera",
+//     legs:4,
+//     color:"Black",
+//     age:2,
+//     bark:"woof woof",
+// };
+// console.log(dog.name)
+// console.log(dog.legs)
+// console.log(dog.color)
+// console.log(dog.age)
+// console.log(dog.bark)
+
+const users = {
+    Alex: {
+      email: 'vishwa@ioi.com',
+      skills: ['HTML', 'CSS', 'JavaScript'],
+      age: 20,
+      isLoggedIn: false,
+      points: 30
+    },
+    Asab: {
+      email: 'imran@ioi.com',
+      skills: ['HTML', 'CSS', 'JavaScript', 'Redux', 'MongoDB', 'Express', 'React', 'Node'],
+      age: 25,
+      isLoggedIn: false,
+      points: 50
+    },
+    Brook: {
+      email: 'amrit@ioi.com',
+      skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Redux'],
+      age: 30,
+      isLoggedIn: true,
+      points: 50
+    },
+    Daniel: {
+      email: 'deepak@ioi.com',
+      skills: ['HTML', 'CSS', 'JavaScript', 'Python'],
+      age: 20,
+      isLoggedIn: false,
+      points: 40
+    },
+    John: {
+      email: 'shabresh@ioi.com',
+      skills: ['HTML', 'CSS', 'JavaScript', 'React', 'Redux', 'Node.js'],
+      age: 20,
+      isLoggedIn: true,
+      points: 50
+    },
+    Thomas: {
+      email: 'anukul@ioi.com',
+      skills: ['HTML', 'CSS', 'JavaScript', 'React'],
+      age: 20,
+      isLoggedIn: false,
+      points: 40
+    },
+    Paul: {
+      email: 'anurag@ioi.com',
+      skills: ['HTML', 'CSS', 'JavaScript', 'MongoDB', 'Express', 'React', 'Node'],
+      age: 20,
+      isLoggedIn: false,
+      points: 40
+    }
+  }
+
+
+  let maxSkills = 0;
+  let mostSkilledPerson = '';
+  
+  for (const user in users) {
+    if (users[user].skills.length > maxSkills) {
+      maxSkills = users[user].skills.length;
+      mostSkilledPerson = user;
+    }
+  }
+  
+  console.log('Person with most skills:', mostSkilledPerson);
+
+  let loggedInCount = 0;
+let highPointCount = 0;
+
+for (const user in users) {
+  if (users[user].isLoggedIn) {
+    loggedInCount++;
+  }
+  if (users[user].points >= 50) {
+    highPointCount++;
+  }
+}
+
+console.log('Number of logged in users:', loggedInCount);
+console.log('Number of users with >= 50 points:', highPointCount);
+
+const mernStackDevelopers = [];
+
+for (const user in users) {
+  const { skills } = users[user];
+  if (skills.includes('MongoDB') && skills.includes('Express') && skills.includes('React') && skills.includes('Node')) {
+    mernStackDevelopers.push(user);
+  }
+}
+
+console.log('MERN stack developers:', mernStackDevelopers);
+
+const updatedUsers = { ...users, MyName: { email: 'myemail@domain.com', skills: ['HTML', 'CSS'], age: 30, isLoggedIn: true, points: 60 } };
+
+console.log(updatedUsers);
+
+const userKeys = Object.keys(users);
+console.log('User keys:', userKeys);
+
+const userValues = Object.values(users);
+console.log('User values:', userValues);
+
+const countries = {
+    India: {
+      capital: 'New Delhi',
+      population: '1.366 billion',
+      languages: ['Hindi', 'English']
+    },
+    USA: {
+      capital: 'Washington D.C.',
+      population: '331 million',
+      languages: ['English']
+    }
+  };
+  
+  for (const country in countries) {
+    const { capital, population, languages } = countries[country];
+    console.log(`Country: ${country}`);
+    console.log(`Capital: ${capital}`);
+    console.log(`Population: ${population}`);
+    console.log(`Languages: ${languages.join(', ')}`);
+  }
+  
