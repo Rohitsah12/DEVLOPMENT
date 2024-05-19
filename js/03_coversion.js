@@ -12,8 +12,20 @@
 // let booleanIsLoggedIn=Boolean(isloggedIn);
 // console.log(booleanIsLoggedIn);
 
-let sumeNumber=33
-let stringNumber=String(sumeNumber);
-console.log(stringNumber);
+// let sumeNumber=33
+// let stringNumber=String(sumeNumber);
+// console.log(stringNumber);
+
+//*********************Operations****************************************** */
+// let value =3
+// let negValue=-value
+// console.log(negValue);
+
+let str1="hello"
+let str2=" rohit"
+console.log(str1+str2);
+
+console.log("1"+2);
+console.log(2+"1");
 
 
