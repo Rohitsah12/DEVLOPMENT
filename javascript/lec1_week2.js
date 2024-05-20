@@ -18,3 +18,13 @@
 // setTimeout(() => {
 //     console.log("Hello")
 // }, 5000);
+
+//Map
+// const Num=[1,2,4,5,6]
+// const total=Num.map((num)=>num*num);
+// console.log(total);
+
+//Filter
+const country=["Finland","Ireland","Pakistan"]
+const counti=country.filter((country)=>country.endsWith("land"));
+console.log(counti);
