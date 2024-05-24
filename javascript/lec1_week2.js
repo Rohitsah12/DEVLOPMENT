@@ -112,8 +112,16 @@ console.log(fin,est,sw,den,nor);
 let {width,height,area,perimeter}=rectangle;
 console.log(width,height,area,perimeter);
 
-let [brook,alex,david,john,sara,martha,thomas]=users
-console.log(brook,alex,david,john,sara,martha,thomas);
+users.forEach(user => {
+    const keys = Object.keys(user); 
+    console.log(keys);
+});
+
+const usersWithLessThanTwoSkills = users.filter(user => {
+    const { skills } = user;  
+    return skills.length < 2;
+});
+console.log(usersWithLessThanTwoSkills)
 
 
 
