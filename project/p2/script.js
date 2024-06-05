@@ -31,3 +31,8 @@ document.addEventListener('DOMContentLoaded',()=>{
 
     }
 });
+//Background:- Black
+// test:- white
+//content position:-Top centre
+//add button :- green
+//Delete Button:- Red
