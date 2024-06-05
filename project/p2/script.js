@@ -11,19 +11,23 @@ document.addEventListener('DOMContentLoaded',()=>{
             return;
         }
         const taskItem=document.createElement('li');
+        console.log(taskItem);
         taskItem.textContent  = tasktext;
 
         const deleteButton= document.createElement('button');
         deleteButton.textContent="Delete";
-        
+
         deleteButton.addEventListener('click',()=>{
             taskList.removeChild(taskItem);
+            taskList.removeChild(deleteButton);
         });
         taskItem.addEventListener('click',()=>{
-            taskItem.classList.toggle('Completed')//Q2
+            taskItem.classList.toggle('Completed');//Q2
         });
-        taskInput.appendChild(deleteButton);
-        taskInput.appendChild(taskItem);
+        taskList.appendChild(deleteButton);
+        taskList.appendChild(taskItem);
+        console.log(taskItem)
+        taskInput.value="";
 
     }
 });
