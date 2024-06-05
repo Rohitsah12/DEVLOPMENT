@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listener</title>
+</head>
+<body>
+    <button>1star</button>
+    <button>2star</button>
+    <button>3star</button>
+    <button>4star</button>
+    <button>5star</button>
+    <script>
+        const rohit = () => {
+            const title = document.createElement("h1");
+            title.textContent = "1-Star";
+            document.body.appendChild(title);
+        }
+        const rohit1 = () => {
+            const title = document.createElement("h1");
+            title.textContent = "2-Star";
+            document.body.appendChild(title);
+        }
+        const rohit2 = () => {
+            const title = document.createElement("h1");
+            title.textContent = "3-Star";
+            document.body.appendChild(title);
+        }
+        const rohit3 = () => {
+            const title = document.createElement("h1");
+            title.textContent = "4-Star";
+            document.body.appendChild(title);
+        }
+        const rohit4 = () => {
+            const title = document.createElement("h1");
+            title.textContent = "5-Star";
+            document.body.appendChild(title);
+        }
+
+        const buttons = document.querySelectorAll("button");
+        buttons[0].addEventListener("click", rohit);
+        buttons[1].addEventListener("click", rohit1);
+        buttons[2].addEventListener("click", rohit2);
+        buttons[3].addEventListener("click", rohit3);
+        buttons[4].addEventListener("click", rohit4);
+    </script>
+</body>
+</html>
